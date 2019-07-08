@@ -17,12 +17,15 @@ class ReadLayoutCnab {
 
     public function leituraHeader()
     {
+
       $layout = $this->layout;
       foreach($layout as $item) {
           if($item['tipo'] == 'header'){
             $header["{$item['nomeCampo']}"] = $this->leituraLinha($this->file,$item['posicao_inicial'],$item['tamanho_campo']);
           }
       }
+        $teste = 'teste';
+
     }
     private function leituraLinha($line, $start, $size)
     {

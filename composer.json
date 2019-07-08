@@ -2,7 +2,7 @@
     "name": "rickslayer/layout-cnab-retorno",
     "description": "Leitor genérico de layout CNAB retorno via arquivo JSON",
     "type": "project",
-    "license": "GNU",
+    "license": "MIT",
     "authors": [
         {
             "name": "paulo.almeida-at-424057606549",
