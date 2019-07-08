@@ -17,19 +17,30 @@ class ReadLayoutCnab {
 
     public function leituraHeader()
     {
-
-      $layout = $this->layout;
+      $layout = json_decode($this->layout, true);
+      $header = array();
       foreach($layout as $item) {
           if($item['tipo'] == 'header'){
-            $header["{$item['nomeCampo']}"] = $this->leituraLinha($this->file,$item['posicao_inicial'],$item['tamanho_campo']);
+            $header["{$item['nome_campo']}"] = $this->leituraLinha($this->file[0],$item['posicao_inicial'],$item['tamanho_campo']);
           }
       }
-        $teste = 'teste';
-
+       return $header;
     }
+    public function leituraHeaderLote()
+    {
+      $layout = json_decode($this->layout, true);
+      $headerLote = array();
+      foreach($layout as $item) {
+          if($item['tipo'] == 'header-lote'){
+            $headerLote["{$item['nome_campo']}"] = $this->leituraLinha($this->file[1],$item['posicao_inicial'],$item['tamanho_campo']);
+          }
+      }
+       return $headerLote;
+    }
+
     private function leituraLinha($line, $start, $size)
     {
-        return substr($line,$start,$size);
+        return substr($line,$start-1,$size);
     }
 
     protected function validateFile()
