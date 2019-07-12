@@ -13,7 +13,7 @@
     {
         "psr-4":
         {
-            "LayoutCnabRetorno\\": "src/LayoutCnabRetorno/"
+            "rickslayer\\layout-cnab-retorno\\": "src/"
         }
     },
     "require": {}
