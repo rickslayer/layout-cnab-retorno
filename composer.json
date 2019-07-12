@@ -5,9 +5,16 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "paulo.almeida-at-424057606549",
+            "name": "paulo.almeida",
             "email": "paulo.almeida@erpflex.com.br"
         }
     ],
+    "autoload":
+    {
+        "psr-4":
+        {
+            "LayoutCnabRetorno\\": "src/LayoutCnabRetorno/"
+        }
+    },
     "require": {}
 }
