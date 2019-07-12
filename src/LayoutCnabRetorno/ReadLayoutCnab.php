@@ -12,7 +12,7 @@ namespace LayoutCnabRetorno;
 
 class ReadLayoutCnab {
 
-    public  $is_valid;
+    public $is_valid;
     private $file;
     private $layout;
     private $masterkey = 0;
@@ -78,8 +78,5 @@ class ReadLayoutCnab {
         if(!$file) {
             throw new \Exception("Não foi encontrado nenhum arquivo para validar");
         }
-        
     }
-
-    
 }

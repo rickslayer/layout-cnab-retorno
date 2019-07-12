@@ -113,3 +113,4 @@ Este pacote está diponibilizado sob LGPLv3 ou MIT License (MIT). Leia  [Arquivo
 [link-issues]: https://github.com/rickslayer/layout-cnab-retorno/issues
 [link-forks]: https://github.com/rickslayer/layout-cnab-retorno/network
 [link-stars]: https://github.com/rickslayer/layout-cnab-retorno/stargazers
+
